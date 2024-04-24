@@ -1,0 +1,4 @@
+cmake-*/
+.idea/
+bin/
+build/

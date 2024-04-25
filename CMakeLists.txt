@@ -4,9 +4,9 @@ project(PraktickaProgramovani)
 # cmake settings
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
 # dependencies
 add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/json) # JSON
@@ -20,5 +20,4 @@ add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/HTTPRequest) # Requests
 add_subdirectory(${CMAKE_SOURCE_DIR}/vendor/stb) # Images & other stuff
 
 # main projects
-add_subdirectory(DesktopApp)
-add_subdirectory(QR)
+add_subdirectory(SitMLM)

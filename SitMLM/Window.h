@@ -9,6 +9,8 @@ public:
     ~Window();
     void begin();
     void end();
+    void beginUI();
+    void endUI();
     bool isOpen();
 
 private:

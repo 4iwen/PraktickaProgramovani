@@ -1,13 +1,14 @@
 cmake_minimum_required(VERSION 3.6)
-project(DesktopApp LANGUAGES CXX)
+project(SitMLM LANGUAGES CXX)
 
 add_executable(
-        DesktopApp
+        SitMLM
 
         ${CMAKE_SOURCE_DIR}/vendor/imgui/imgui.cpp
         ${CMAKE_SOURCE_DIR}/vendor/imgui/imgui_draw.cpp
         ${CMAKE_SOURCE_DIR}/vendor/imgui/imgui_tables.cpp
         ${CMAKE_SOURCE_DIR}/vendor/imgui/imgui_widgets.cpp
+        ${CMAKE_SOURCE_DIR}/vendor/imgui/imgui_demo.cpp
         ${CMAKE_SOURCE_DIR}/vendor/imgui/backends/imgui_impl_glfw.cpp
         ${CMAKE_SOURCE_DIR}/vendor/imgui/backends/imgui_impl_opengl3.cpp
 
@@ -17,13 +18,14 @@ add_executable(
 )
 
 target_link_libraries(
-        DesktopApp PRIVATE
+        SitMLM PRIVATE
 
         nlohmann_json::nlohmann_json
         stb
         glfw
         glad
         HTTPRequest
+        ws2_32
 )
 
 include_directories(
